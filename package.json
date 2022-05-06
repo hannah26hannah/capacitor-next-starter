@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "capacitor-build": "npx next build && npx next export",
-    "build-mobile": "next build && next export && npx cap sync"
+    "build-mobile": "next build && next export && npx cap sync",
+    "open-ios": "npx cap open ios",
+    "open-android": "npx cap open android"
   },
   "dependencies": {
     "@capacitor/core": "^3.5.1",
