@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "capacitor-build": "npx next build && npx next export"
   },
   "dependencies": {
     "@capacitor/core": "^3.5.1",

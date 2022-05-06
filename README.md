@@ -43,3 +43,33 @@ yarn add -D @capacitor/cli
 
 npx cap init --web-dir=out
 ```
+
+### Building Next.js app
+
+`"capacitor-build": "npx next build && npx next export"`
+
+```ts
+// capacitor.config.ts
+
+const config: CapacitorConfig = {
+  appId: 'com.example.app',
+  appName: 'capacitor-next-starter',
+  webDir: 'out', // here
+  bundledWebRuntime: false,
+};
+```
+
+This will output your project into a folder called `out` if you set your webDir as `out`
+
+to resolve image optimization using Next.js default loader is not compatible with `next export` error, set image loader like this as well:
+
+```js
+// next.config.js
+module.exports = {
+  ...nextConfig,
+  images: {
+    loader: 'akamai',
+    path: '/',
+  },
+};
+```
