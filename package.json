@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "capacitor-build": "npx next build && npx next export"
+    "capacitor-build": "npx next build && npx next export",
+    "build-mobile": "next build && next export && npx cap sync"
   },
   "dependencies": {
     "@capacitor/core": "^3.5.1",
+    "@capacitor/ios": "^3.5.1",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"

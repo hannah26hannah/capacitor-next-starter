@@ -73,3 +73,14 @@ module.exports = {
   },
 };
 ```
+
+Once you've set up necessary environmental system, run below for each platforms:
+
+```bash
+npx cap add android
+npx cap add ios
+```
+
+`"build-mobile": "next build && next export && npx cap sync"`
+
+This one lets you copy the assets over to your iOS/Android projects by typing: `npx cap sync` automatically with one command line.
