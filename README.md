@@ -84,3 +84,7 @@ npx cap add ios
 `"build-mobile": "next build && next export && npx cap sync"`
 
 This one lets you copy the assets over to your iOS/Android projects by typing: `npx cap sync` automatically with one command line.
+
+Apple Silicon-powered Mac has `ffi` Bus Error on `npx cap add` command.
+
+> This is a CocoaPods bug related to ffi not installing on M1. For now, you need to have Rosetta installed, install ffi on a x86_64 architecture and run pod install using the simulated Intel architecture for the first time.

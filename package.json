@@ -9,6 +9,7 @@
     "lint": "next lint",
     "capacitor-build": "npx next build && npx next export",
     "build-mobile": "next build && next export && npx cap sync",
+    "add-ios": "npx cap add ios",
     "open-ios": "npx cap open ios",
     "open-android": "npx cap open android"
   },
