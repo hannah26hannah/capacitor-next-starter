@@ -85,6 +85,29 @@ npx cap add ios
 
 This one lets you copy the assets over to your iOS/Android projects by typing: `npx cap sync` automatically with one command line.
 
-Apple Silicon-powered Mac has `ffi` Bus Error on `npx cap add` command.
+### Apple Silicon-powered Mac has `ffi` Bus Error on `npx cap add` command.
 
 > This is a CocoaPods bug related to ffi not installing on M1. For now, you need to have Rosetta installed, install ffi on a x86_64 architecture and run pod install using the simulated Intel architecture for the first time.
+
+If you're using M1, ARM architecture, this could happen while installing CocoaPods.
+
+```bash
+# If you want to remove existing old cocoapods, try this one, otherwise just skip this command.
+gem list --local | grep cocoapods | awk '{print $1}' | xargs sudo gem uninstall
+
+sudo arch -x86_64 gem install ffi
+sudo arch -x86_64 gem install cocoapods
+```
+
+If this doesn't work, try below:
+
+```bash
+# remove pre-installed cocoapods
+gem list --local | grep cocoapods | awk '{print $1}' | xargs sudo gem uninstall
+
+# go to your terminal and enable open using Rosetta from 'get Info' menu.
+sudo gem install cocoapods
+
+# type below to fix the ffi bundle problem.
+sudo gem install ffi
+```
