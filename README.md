@@ -112,10 +112,25 @@ sudo gem install cocoapods
 sudo gem install ffi
 ```
 
+## Ionic Framework
+
+```zsh
+npm install @capacitor/app @capacitor/haptics @capacitor/keyboard @capacitor/status-bar
+# yarn add @capacitor/app @capacitor/haptics @capacitor/keyboard @capacitor/status-bar
+
+```
+
+The official doc says
+
+> For the best user experience, you should make sure these plugins are installed even if you don't import them in your app.
+
+so don't remove them when you're starting new project based on this starter kit.
+
 ## TODO
 
 - [] build differently based on the platform `Per-platform management`
 - [x] add tailwindcss
-- [] add ionic
+- [] add env to get dynamic IP address
+- [] add Ionic Framework
 - [] i18n on Capacitor
 - [] routing
