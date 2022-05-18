@@ -12,10 +12,12 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1 className='text-bold underline'>
+        <h1 className=''>
           Welcome to <a href='https://nextjs.org'>Next.js!</a>
         </h1>
-        <p>The value of custom key is {process.env.customKey}</p>
+        <p className='underline'>
+          The value of custom key is {process.env.customKey}
+        </p>
       </main>
 
       <footer>

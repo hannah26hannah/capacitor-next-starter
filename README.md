@@ -112,8 +112,6 @@ sudo gem install cocoapods
 sudo gem install ffi
 ```
 
-## Ionic Framework
-
 ```zsh
 npm install @capacitor/app @capacitor/haptics @capacitor/keyboard @capacitor/status-bar
 # yarn add @capacitor/app @capacitor/haptics @capacitor/keyboard @capacitor/status-bar
