@@ -1,0 +1,6 @@
+/* entry css file to have tailwind's pre-built CSS  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;

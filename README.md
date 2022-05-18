@@ -111,3 +111,11 @@ sudo gem install cocoapods
 # type below to fix the ffi bundle problem.
 sudo gem install ffi
 ```
+
+## TODO
+
+- [] build differently based on the platform `Per-platform management`
+- [x] add tailwindcss
+- [] add ionic
+- [] i18n on Capacitor
+- [] routing
