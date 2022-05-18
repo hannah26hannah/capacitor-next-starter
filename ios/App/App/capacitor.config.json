@@ -2,5 +2,8 @@
 	"appId": "com.example.app",
 	"appName": "capacitor-next-starter",
 	"webDir": "out",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": false,
+	"server": {
+		"url": "http://192.168.219.255:3000"
+	}
 }

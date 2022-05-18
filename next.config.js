@@ -10,12 +10,15 @@ const nextConfig = {
       '/': { page: '/' },
     };
   },
-};
-
-module.exports = {
-  ...nextConfig,
   images: {
     loader: 'akamai',
     path: '/',
   },
+  env: {
+    customKey: 'my-value',
+  },
+};
+
+module.exports = {
+  ...nextConfig,
 };
